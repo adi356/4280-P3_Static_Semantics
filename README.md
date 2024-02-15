@@ -6,12 +6,15 @@
 3. start program by typing ./P3 [testFile]
 
 ## Known tests that are failing
+
 P3 files - goodTest3.f23
+
 P2 files - goodFile5, goodFile7, goodFile8, goodFile9, goodFile10
 
 ## Task
 
 ### BNF
+```
 <program> -> <vars> xopen <stats> xclose
 <vars>    -> empty | xdata <varList>
 <varList> -> identifier : integer <Y>
@@ -31,4 +34,5 @@ P2 files - goodFile5, goodFile7, goodFile8, goodFile9, goodFile10
 <if>      -> xcond [<exp> <RO> <exp>] <stat>
 <loop>    -> xloop [<exp> <RO> <exp>] <stat>
 <assign>  -> xlet identifier <exp>;
-<RO>      -> <<(onetoken) | >> (one token) | < | >| = | %
+<R0>      -> <<(onetoken) | >> (one token) | < | >| = | %
+```
